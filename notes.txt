@@ -1,0 +1,108 @@
+Appium/mobile testing -
+
+android studio
+appium server
+
+appium is an open source tool which we used to automate mobile applications
+
+cucumber
+maven
+poi ooxml
+poi
+commons io
+selenium
+appium
+
+how to check if android studio is working properly, adb in cmd
+
+create/attach device with the computer - Android Studio
+connecting the script with the device - it is responsible to connect script with device
+it will allow you to identify elements using appium inspector
+to write the script - IntellijIDE
+
+in pom.xml file - we need to add dependency
+
+poi ooxml
+poi
+commons io
+selenium
+appium
+cucumber
+
+we need application to test in the device
+
+for android  - .apk file (extension of your android app)
+for IOS - .ipa/.app (extension of your ios app)
+
+
+to install app from cmd
+open the device
+open the folder in computer where apk is available
+write adb install appname.apk and press enter
+
+how to launch the app using automation script
+how to identify the locators
+how to run the script
+
+recap -
+
+downloaded android studio
+downloaded appium server
+
+set the home/environment variables
+
+downloaded tools under android sdk using android studio
+created devices/emulators in android studio
+we installed apk in the device using cmd/drag n drop
+how to check android is installed - adb
+how to check if the device is opened - adb devices
+
+created a maven project
+
+made structure of the framework
+written login scenario
+generated all the step definitions
+created runner class
+
+we have to launch the application in mobile using script
+
+your developers will provide you these detail -
+app package -
+app activity -
+
+desired capabilities - it provides the information about the execution
+devicename
+platformname
+version
+which application
+which os
+
+
+keep your device on and running
+keep your appium server on and running
+you must enter the correct details under desired capabilities
+
+
+if you are getting UIautomator exited error
+then create new device
+select API level 29, download it and then create device
+restart appium server
+restart Intellij
+open the newly generated device and install the app
+and then run the code
+
+uiautomatorviewer is responsible to locate elements in application
+appium inspector is also used to locate elements in application
+
+//*[@attribute='Value of attribute']
+
+//*[@text='Username']
+//*[@content-desc='test-Password']
+//*[@text='LOGIN']
+
+we have Page object model design pattern
+we keep object repository - locators
+
+
+
+

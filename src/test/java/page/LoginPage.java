@@ -1,4 +1,5 @@
-package pages;
+package page;
+
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -11,15 +12,14 @@ public class LoginPage extends CommonMethods {
     @AndroidFindBy(xpath="//*[@text='Username']")
     public MobileElement usernameField;
 
-    @AndroidFindBy(xpath="//*[@content-desc='test-Password']")
+    @AndroidFindBy(xpath="//*[@text='Password']")
     public MobileElement passwordField;
 
     @AndroidFindBy(xpath="//*[@text='LOGIN']")
     public MobileElement loginButton;
 
-
     public LoginPage(){
+
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
     }
-
 }

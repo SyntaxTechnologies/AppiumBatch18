@@ -10,7 +10,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 
-public class CommonMethods {
+public class CommonMethods extends PageInitializer{
 
     public static AppiumDriver driver;
 
@@ -39,6 +39,7 @@ public class CommonMethods {
         driver = new AppiumDriver(u, capabilities);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         System.out.println("Application opened");
+        initializeObjects();
     }
 
 
